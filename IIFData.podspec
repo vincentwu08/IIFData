@@ -93,9 +93,9 @@ Pod::Spec.new do |s|
 
   # s.source_files  = "Products/**"
   # s.exclude_files = "Classes/Exclude"
-  # s.vendored_frameworks ='Products/IIFData.framework'
+  s.vendored_frameworks ='Products/IIFData.framework'
 
-  # s.public_header_files = "Classes/**/*.h"
+  s.public_header_files = "Products/IIFData.framework/*.{h}"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -134,6 +134,6 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "AFNetworking", "~> 3.0"
+  s.dependency "AFNetworking", "~> 3.0"
 
 end
